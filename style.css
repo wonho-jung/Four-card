@@ -1,0 +1,196 @@
+/* - Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%)
+
+### Neutral
+
+- Very Dark Blue: hsl(234, 12%, 34%)
+- Grayish Blue: hsl(229, 6%, 66%)
+- Very Light Gray: hsl(0, 0%, 98%) */
+
+
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+/* header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 200;
+}
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sec-h1 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+p{
+    color: hsl(229, 6%, 66%);
+    font-weight: 400;
+}
+
+
+
+/* Section */
+section{
+    margin: 20px;
+    text-align: center;
+}
+.button{
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+/* main */
+
+.all-main {
+border-top: 5px solid;
+border-radius: 3%;
+width: 400px;
+height: 220px;
+box-sizing: border-box;
+box-shadow: 0px 10px 35px -18px hsl(212, 86%, 64%); /* offset-x | offset-y | blur-radius | spread-radius | color */
+padding: 20px;
+}
+
+.supervisor{
+    border-color: hsl(180, 62%, 55%);
+}
+.team-builder{
+    border-color: hsl(0, 78%, 62%);
+}
+.karma{
+    border-color: hsl(34, 97%, 64%);
+}
+.calculator{
+    border-color: hsl(212, 86%, 64%);
+}
+
+
+
+img {
+    margin-top: 20px;
+    float: right;
+}
+
+
+
+/* // for mobile */
+
+@media only screen and (max-width: 375px) {
+    header{
+        margin-top: 50px;
+        width: 80%;
+    }
+    .all-main{
+        margin-bottom: 40px;
+        width: 80%;
+    }
+    .sec-col{
+        display: block !important;
+    }
+
+}
+
+/* //for tablet */
+
+@media only screen and (min-width: 376px) and (max-width: 1439px){
+
+    header{
+        margin-top: 50px;
+        width: 100%;
+    }
+    .all-main{
+        margin-left: 20px;
+        margin-bottom: 40px;
+        width: 40%;
+        margin-right: 20px;
+    }
+    .row-1 {
+        display: flex;
+    }
+    .row-2 {
+        display: flex;
+    }
+    .tablet{
+        display: block !important;
+        width: 60%;
+    }
+
+
+
+
+}
+
+
+/* for desktop */
+@media only screen and (min-width: 1440px) {
+
+    header{
+        width: 500px;
+    }
+    .row{
+        display: flex;
+    }
+
+    .row-1{
+        margin-right: 0px;
+    }
+    .row-2{
+        margin-left: 0px;
+    }
+
+    .supervisor, .calculator {
+        margin-top: 130px;
+
+    }
+
+    .sec-col{
+        margin: 0;
+        display: block !important;
+    }
+    .supervisor{
+        margin-right: 30px;
+    }
+    .calculator{
+        margin-left: 30px;
+    }
+
+    .team-builder, .karma{
+        margin-bottom: 30px;
+    }
+
+
+
+}
